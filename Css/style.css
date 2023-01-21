@@ -32,7 +32,9 @@ main{
  .mensaje{
    padding: 40px 40px 40px 40px;
    background: white;
-   background-image: url("Imagenes/muneco.png"), url("Imagenes/Frame 5.png");
+   background-image: url("../Img/muneco.png"), url("../Img/Frame 5.png");
+   background-position: center 100px;
+   background-repeat: no-repeat;
    background-position: center 100px, center 420px;
    background-repeat: no-repeat, no-repeat;
    border:none;
