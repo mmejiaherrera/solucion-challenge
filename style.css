@@ -22,7 +22,7 @@ main{
     border: none;
     color: #0A3871;
     margin-top: 50px;
-    text-transform: lowercase;
+    /*text-transform: lowercase;*/
 }
 
 ::placeholder{color: #0A3871;}
@@ -31,17 +31,26 @@ main{
  }
 
  .mensaje{
-    background: white;
-    background-image: url("Imagenes/muneco.png"), url("Imagenes/Frame 5.png");
-    background-position: center 120px, center 420px;
-    background-repeat: no-repeat, no-repeat;
-    border:none;
-    border-radius: 24px;
-    color: #0A3871;
-    margin-left: 98px;
-    margin-top: 20px;
-    padding-left: 20px;
-    position: static;
+   /*padding-top: 40px;*/
+   padding: 40px 40px 40px 40px;
+
+   background: white;
+   background-image: url("Imagenes/muneco.png"), url("Imagenes/Frame 5.png");
+   background-position: center 100px, center 420px;
+   background-repeat: no-repeat, no-repeat;
+   border:none;
+   resize: none;
+   border-radius: 24px;
+   color: #0A3871;
+   margin: 0 98px 0 98px
+     
+   ;
+   /*margin-left: 98px;*/
+   /*margin-top: 20px;*/
+   /*padding-left: 20px;*/
+   /*padding-bottom: 15px;*/
+   position: static;
+   /*padding: center;*/
  }
 
 .mensaje:focus{
@@ -73,7 +82,7 @@ main{
     height: 67px;
     width: 328px;
  }
- 
+
  .copiar{
     display: none;
     border: 1px solid #0A3871;
@@ -81,11 +90,18 @@ main{
     color: #0A3871;
     cursor: pointer;
     height: 67px;
-    margin-left: 108px;
-    margin-top: 402px;
+    /*margin-left: 130px;*/
+    /*margin-top: -100px;*/
     position: relative;
     width: 328px;
+    z-index: 2;
+    margin: -104px 160px;
+}
+
+.copiar.active {
+   display: block;
  }
+
 
 .informacion{
   margin: 1rem auto;
